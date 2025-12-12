@@ -25,7 +25,7 @@ const PokemonList = ({ pokemons }) => {
     };
 
     return (
-        <div className="px-4 py-6 max-w-5xl mx-auto">
+        <div className="px-0 py-6 max-w-6xl mx-auto">
             <input
                 type="text"
                 placeholder="Cari Pokémon berdasarkan nama..."
@@ -35,13 +35,13 @@ const PokemonList = ({ pokemons }) => {
                     setCurrentPage(1);
                 }}
                 className="
-                    w-full p-3 mb-5 
-                    rounded-lg border border-gray-300 
+                    w-72 p-3 mb-5 
+                    rounded-xl border border-gray-300 
                     focus:outline-none 
                     focus:ring-2 focus:ring-blue-500
-                    bg-white
+                    bg-transparent
                     animate-neon-pulse
-                    text-black
+                    text-white
                 "
             />
             <div

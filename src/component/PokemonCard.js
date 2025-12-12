@@ -81,19 +81,21 @@ const PokemonCard = ({ pokemon }) => {
             }}
         >
             <CardActionArea>
-                <div className="flex justify-center pt-4">
+                <Box className="flex justify-center" sx={{ height: 140, pt: 1, position: 'relative', overflow: 'visible' }}>
                     <CardMedia
                         component="img"
                         image={pokemon.image}
                         alt={pokemon.name}
                         sx={{
-                            width: 150,
-                            height: 100,
+                            width: 200, 
+                            height: 140,
                             objectFit: "contain",
+                            position: 'absolute', 
+                            top: 0,
+                            filter: 'drop-shadow(0 4px 10px rgba(0,0,0,0.5))',
                         }}
                     />
-                </div>
-
+                </Box>
                 <CardContent className="text-center">
                     <Typography
                         sx={{
