@@ -9,11 +9,7 @@ const scan = keyframes`
   50%  { opacity: 0.4; }
   100% { transform: translateX(140%); opacity: 0.8; }
 `;
-const electricGlow = keyframes`
-  0% { filter: drop-shadow(0 0 4px #00eaff); }
-  50% { filter: drop-shadow(0 0 10px #00eaff); }
-  100% { filter: drop-shadow(0 0 4px #00eaff); }
-`;
+
 const getTypeColor = (type) => {
     switch (type.toLowerCase()) {
         case 'grass': return '#7AC74C';
