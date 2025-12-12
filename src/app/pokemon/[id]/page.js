@@ -10,7 +10,6 @@ const Detail = () => {
         navigate('/');
     }
     const { detailData: pokemon, loading, error } = usePokemonDetail(pokemonId);
-    console.log("id", pokemon)
 
     if (!pokemonId) {
         return (
